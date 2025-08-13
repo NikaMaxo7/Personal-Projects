@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a1433;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+       /* Header */
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 32px 16px 32px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header nav {
+    display: flex;
+    gap: 38px;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.15rem;
+    padding: 10px 22px;
+    border-radius: 7px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.header a:hover {
+    background: rgba(200,30,60,0.18);
+    color: #c81e3c;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+}
+
+.site-logo {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 30%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    flex: 1;
+    justify-content: center;
+}
+
+        /* Light Theme */
+
+.theme-btn {
+    margin-right: 32px;
+    padding: 10px 22px;
+    border-radius: 7px;
+    /* background: rgba(255,255,255,0.13); */
+    background: #122620;
+    color: #d6ad60;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 2px solid #d6ad60;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    cursor: pointer;
+}
+
+.theme-btn:hover {
+    background: #d6ad60;
+    color: #122620;
+    border: 2px solid #d6ad60;
+}
+
+body.light-mode {
+    background: #101e1a;
+}
+
+body.light-mode .container,
+body.light-mode .header {
+    /* background: rgba(255,255,255,0.85); */
+    background: #122620;
+    color: #222;
+}
+
+body.light-mode .theme-btn {
+    background: #0a1433;
+    color: #122620;
+    border: 2px solid #0a1433;
+}
+
+body.light-mode .theme-btn:hover {
+    background: #c81e3c;
+    color: #122620;
+    border: 2px solid #c81e3c;
+}

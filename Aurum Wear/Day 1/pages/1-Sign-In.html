@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/1-Sign-In.css">
+
+    <title>Sign In - Sign Up</title>
+
+    <link id="dynamic-favicon" rel="icon" type="image/png" href="/9- Idk Web/pictures/polo-ralph-lauren-logo.png">
+    <!-- <script>
+        const favicons = [
+          '/9- Idk Web/pictures/polo-ralph-lauren-logo.png',
+          '/9- Idk Web/pictures/lacoste-logo.png',
+          '/9- Idk Web/pictures/tommy-hilfiger-logo.png',
+          '/9- Idk Web/pictures/tom-ford-logo.png',
+          '/9- Idk Web/pictures/moncler-logo.png',
+        ];
+        let current = 0;
+        setInterval(() => {
+        current = (current + 1) % favicons.length;
+          document.getElementById('dynamic-favicon').href = favicons[current];
+        }, 3000);
+    </script> -->
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="./0-Home.html">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Sign In</h2>
+        <form>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="options">
+                <label>
+                    <input type="checkbox" id="remember">
+                    Remember me
+                </label>
+            </div>
+            <button type="submit" class="signin-btn">Sign In</button>
+            <div class="forgot">
+                <a href="#">Forgot password?</a>
+            </div>
+        </form>
+        <div class="signup-link">
+            Already have an account?
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 
+red = #c81e3c
+navy blue = #0a1433 
+
+-->
