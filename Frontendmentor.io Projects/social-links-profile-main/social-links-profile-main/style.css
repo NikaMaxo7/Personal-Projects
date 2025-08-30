@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card {
+    background-color: hsl(0, 0%, 12%);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 350px;
+}
+
+.profile-picture {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.bio {
+    font-size: 14px;
+    opacity: 0.5;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-btn {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
