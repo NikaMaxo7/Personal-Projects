@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EFEFEF;
+}
+
+/* HEADER OF WEBSITE */
+
+header {
+    background-color: #122435;
+    color: white;
+    padding: 0;
+    font-family: sans-serif;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    flex: 1;
+    text-align: left;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin: 0 18px;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.2s;
+    display: inline-block;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #C9A14D;
+    transform: scale(1.15);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* MAIN CONTENT */
+
+.main-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #122435;
+    width: 460px;
+    height: 715px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-height: 400px;
+}
+
+.main-container h1 {
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-container li {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.main-container a {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 20px;
+    background-color: #224766;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.main-container a:hover {
+    background-color: #C9A14D;
+    transform: scale(1.02);
+}
+
+.functions-list {
+    text-align: center;
+    max-width: 480px;
+    margin: 0 auto;
+}

@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #5e5e5e;
+}
+
+header {
+    background-color: #fafafa;
+    color: white;
+    padding: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    height: 100px;
+    position: relative;
+}
+
+.logo img {
+    width: 90px;
+    margin-left: 0;
+    display: block;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 70px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+
+li::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to right, #90ee90, #00ffff);
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+li:hover::after {
+    width: 80%;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    padding: 8px 0;
+    display: inline-block;
+}
+
+.text:hover {
+    color: #00bfae;
+    text-decoration: none;
+}
+
+.button {
+    background: linear-gradient(to right, #90ee90, #00ffff);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.3s cubic-bezier(.4,2,.6,1);
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #7dcf7d, #00d4d4);
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
