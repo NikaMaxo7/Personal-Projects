@@ -1,0 +1,161 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    background-color: hsl(244, 37%, 16%);
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 970px;
+    height: 400px;
+    width: 90%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+/* TEXT SECTION */
+
+.text {
+    flex: 1;
+    padding: 20px 40px 30px 40px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 15px 20px;
+    line-height: 1.4;
+    max-width: 500px;
+}
+
+h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    font-size: 15px; 
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 0 0 0 20px;
+    line-height: 1.7;
+}
+
+/* STATS SECTION */
+
+.stats {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 45px;
+    margin-left: 20px;
+    gap: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.stat h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+}
+
+.stat p {
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, 0.6); 
+    margin: 5px 0 0 0;
+    text-transform: uppercase;
+}
+
+/* IMAGE SECTION */
+
+.image-main {
+    flex: 0 0 50%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-main img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 0 5px 5px 0;
+    filter: brightness(0.7);
+}
+
+/* Purple overlay */
+
+.image-main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+    opacity: 0.7;
+    mix-blend-mode: overlay;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 330px;
+        height: auto;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .image-main {
+        order: 1;
+    }
+
+    .image-main img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .text {
+        order: 2;
+        padding: 30px;
+        text-align: center;
+        flex-basis: auto;
+    }
+    
+    h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .stat h2 {
+        font-size: 22px;
+    }
+}
