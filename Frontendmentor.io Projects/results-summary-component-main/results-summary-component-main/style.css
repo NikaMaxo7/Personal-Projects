@@ -21,6 +21,8 @@ body {
     overflow: hidden;
 }
 
+/* RESULT SECTION */
+
 .result-card {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(0, 0%, 100%);
@@ -29,13 +31,15 @@ body {
     border-radius: 0 0 30px 30px;
     flex-grow: 1;
     flex-basis: 50%;
+    user-select: none;
 }
 
 .card-title {
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: 800;
     color: hsl(241, 100%, 89%);
     margin-bottom: 20px;
+    letter-spacing: 5px;
 }
 
 .score-circle {
@@ -73,6 +77,8 @@ body {
     margin: 15px auto;
 }
 
+/* SUMMARY SECTION */
+
 .summary-card {
     padding: 30px;
     flex-grow: 1;
@@ -81,9 +87,10 @@ body {
 
 .summary-title {
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: 800;
     color: hsl(224, 30%, 27%);
     margin-bottom: 20px;
+    user-select: none;
 }
 
 .summary-item {
@@ -111,10 +118,10 @@ body {
     margin: 0;
 }
 
-.red-bg { background-color: hsla(0, 100%, 67%, 0.1); }
-.yellow-bg { background-color: hsla(39, 100%, 56%, 0.1); }
-.green-bg { background-color: hsla(166, 100%, 37%, 0.1); }
-.blue-bg { background-color: hsla(234, 85%, 45%, 0.1); }
+.red-bg { background-color: hsla(0, 100%, 67%, 0.1); height: 30px;}
+.yellow-bg { background-color: hsla(39, 100%, 56%, 0.1); height: 30px;}
+.green-bg { background-color: hsla(166, 100%, 37%, 0.1); height: 30px;}
+.blue-bg { background-color: hsla(234, 85%, 45%, 0.1); height: 30px;}
 
 .red-text { color: hsl(0, 100%, 67%); }
 .yellow-text { color: hsl(39, 100%, 56%); }
@@ -128,8 +135,7 @@ body {
 }
 
 .score-slash {
-    color: hsl(224, 30%, 27%);
-    opacity: 0.5;
+    color: hsla(224, 30%, 27%, 0.644);
     font-weight: 700;
 }
 
@@ -150,6 +156,9 @@ body {
 .continue-btn:hover {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
+
+
+/* RESPONSIVE DESIGN */
 
 @media (min-width: 600px) {
     .main-card {
